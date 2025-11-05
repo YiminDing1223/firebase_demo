@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login + User Line Demo</title>
+</head>
+<body>
+  <h1>Login + User Line Demo</h1>
+
+  <!-- Login section -->
+  <div id="login-section">
+    <input id="email" type="email" placeholder="Email"><br>
+    <input id="password" type="password" placeholder="Password"><br>
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <!-- Content section (shown after login) -->
+  <div id="content-section" style="display:none;">
+    <p>You are logged in.</p>
+    <button id="getLineBtn">Get My Line</button>
+    <p id="lineDisplay"></p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <!-- Firebase Web SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+
+  <!-- Your main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
